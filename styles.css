@@ -1,5 +1,49 @@
+/*Global setting*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+/*Nav bar section*/
+/*setting all in nav bar*/
+.left-side-column {
+    width: 7%;
+    height: 100%;
+}
+
+.left-side-column header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgb(0,0,0);
+}
+/*set top side*/
+header .top-bar {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/*set nav image button*/
+.top-bar a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+}
+/*hover effect for nav button*/
+
