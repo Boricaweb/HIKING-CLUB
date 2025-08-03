@@ -32,18 +32,62 @@ body {
 }
 /*set top side*/
 header .top-bar {
+    width: 100%;
     height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 /*set nav image button*/
+/*top bar*/
 .top-bar a {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 10%;
+    height: 20%;
+    padding: 20%;
+    transition: background-color 0.5s;
 }
-/*hover effect for nav button*/
+/*Effect for top nav button*/
+.top-bar a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.top-bar a:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+/*bottom bar*/
+.bottom-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    /*border: solid 2px red;*/
+}
+
+.bottom-bar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    /*border: solid 2px red;*/
+}
+
+.bottom-bar .country-selection {
+    width: 50%;
+    height: 80%;
+    margin-right: 0.3rem;
+    /*border: solid 2px red;*/
+}
+
+.bottom-bar .country-selection input {
+    width: 100%;
+    color: white;
+    background-color: black;
+    /*border: solid 2px red;*/
+}
+
 
