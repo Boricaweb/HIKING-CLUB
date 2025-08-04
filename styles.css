@@ -225,8 +225,7 @@ main {
 .promote-photo h3 {
     width: 20%;
     height: 100%;
-    margin-left: 1rem;
-    margin-right: 2rem;
+    margin-left: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -246,7 +245,7 @@ main {
     margin-left: 2rem;
     padding: 0.5rem 0.7rem;
     width: 100%;
-    height: 30%;
+    height: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -277,14 +276,84 @@ main {
 .benefit-photo .photo h3 {
     position: relative;
     z-index: 1; /* Ensure the text is above the image */
-    color: white;
+    color: rgb(142, 230, 243);
     font-size: 1.5rem;
     text-align: center;
     padding: 1rem;
-    text-shadow: 0 0 8px rgba(0,0,0,1);
+    transition: text-shadow 0.3s;
+}
+
+.benefit-photo .photo h3:hover {
+    text-shadow: 0 0 1.5rem rgb(0, 0, 0);
+}
+/*invite part*/
+.invite-part {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /*footer setting*/
 footer {
     width: 100%;
     height: 50%;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .web-info {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*Web page social media part*/
+.web-info .social-media {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px red;
+}
+
+.web-info .social-media h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.web-info .social-media figure {
+    width: 50%;
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.web-info .social-media img {
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.web-info .social-media img:hover, .web-info .social-media img:focus {
+    transform: scale(1.2);
+}
+/*Web additional data part*/
+.web-info .additional-data {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px red;
 }
