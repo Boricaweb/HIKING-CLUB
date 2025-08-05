@@ -27,7 +27,7 @@ body {
 /*Nav bar section*/
 /*setting all in nav bar*/
 .left-side-column {
-    width: 5rem;
+    width: 4rem;
     height: 100%;
     position: fixed;
     left: 0;
@@ -48,7 +48,7 @@ body {
 /*set top side*/
 header .top-bar {
     width: 100%;
-    height: 20rem;
+    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,6 +66,7 @@ header .top-bar {
 .top-bar img {
     width: 50%;
     height: auto;
+    padding: 1%;
 }
 /*Effect for top nav button*/
 .top-bar a:hover {
@@ -78,6 +79,7 @@ header .top-bar {
 /*bottom bar*/
 .bottom-bar {
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,15 +112,18 @@ header .top-bar {
 }
 /*Main Content part Setting*/
 .right-side-column {
-    width: 150rem;
+    width: 100vw;
     height: 150rem;
     position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
     display: flex;
     flex-direction: column;
     align-content: center;
-    justify-content: flex-start;
+    justify-content: center;
     font-family: "Bangers", sans-serif;
-    border: solid 2px red;
 }
 
 main {
@@ -126,10 +131,12 @@ main {
     height: 90%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 /*join buttn set*/
 .join-button {
     width: 100%;
+    max-width: 3840px; /* Limit the maximum width */
     height: 2rem;
     display: flex;
     justify-content: flex-end;
@@ -163,7 +170,6 @@ main {
     height: 100%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 /*web name background video setting*/
 .web-name-part {
@@ -184,7 +190,6 @@ main {
     object-fit: cover;
     position: absolute;
     top: 0;
-    left: 0;
     z-index: -1; /* Ensure the video is behind other content */
 }
 
@@ -335,7 +340,8 @@ footer {
 }
 
 footer .web-info {
-    width: 100%;
+    width: 95rem;
+    max-width: 3840px; /* Limit the maximum width */
     height: 90%;
     display: flex;
     justify-content: space-evenly;
@@ -409,7 +415,7 @@ footer .web-info {
 .copyright {
     border-top: solid 0.1rem rgb(167, 167, 167);
     padding-top: 0.3rem;
-    width: 70%;
+    width: 70rem;
     font-size: 0.7rem;
     display: flex;
     justify-content: center;
