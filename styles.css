@@ -1,4 +1,11 @@
 /*Global setting*/
+@font-face {
+    font-family: "Bangers";
+    src: url("resources/Bangers-Regular.ttf") format("truetype"),
+    url("resources/Bangers-Regular.woff") format("woff"),
+    url("resources/Bangers-Regular.woff2") format("woff2");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -114,6 +121,7 @@ main {
     height: 190%;
     display: flex;
     flex-direction: column;
+    font-family: "Bangers", sans-serif;
 }
 /*join buttn set*/
 .join-button {
@@ -148,6 +156,9 @@ main {
 .content {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 /*web name background video setting*/
 .web-name-part {
@@ -186,8 +197,9 @@ main {
     justify-content: center;
     align-items: center;
     font-size: 4rem;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.4rem;
     color: white;
+    -webkit-text-stroke: 0.1rem black; /* Add a black outline to the text */
     z-index: 5; /* Ensure text is above the video */
 }
 /*intro part setting*/
@@ -210,7 +222,8 @@ main {
 }
 
 .intro-part .right-text h2 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
+    letter-spacing: 0.4rem;
 }
 /*promote part setting*/
 .promote-photo {
@@ -230,6 +243,7 @@ main {
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
+    letter-spacing: 0.2rem;
     color: white;
 }
 
@@ -240,6 +254,7 @@ main {
     box-shadow: 0.3rem 0.3rem 0.3rem rgba(255, 255, 255, 0.5);
     object-fit: fill;
 }
+
 /*benefit photo part setting*/
 .benefit-photo {
     margin-left: 2rem;
@@ -260,6 +275,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: transform 0.5s;
 }
 
 .benefit-photo .photo img {
@@ -276,15 +292,16 @@ main {
 .benefit-photo .photo h3 {
     position: relative;
     z-index: 1; /* Ensure the text is above the image */
-    color: rgb(142, 230, 243);
+    color: rgb(0, 251, 255);
     font-size: 1.5rem;
+    letter-spacing: 0.2rem;
     text-align: center;
     padding: 1rem;
-    transition: text-shadow 0.3s;
+    /*transition: text-shadow 0.3s;*/
 }
 
-.benefit-photo .photo h3:hover {
-    text-shadow: 0 0 1.5rem rgb(0, 0, 0);
+.benefit-photo .photo:hover {
+    transform: scale(1.1);
 }
 /*invite part*/
 .invite-part {
@@ -293,6 +310,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    letter-spacing: 0.15rem;
 }
 /*footer setting*/
 footer {
@@ -305,6 +323,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: "Bangers", sans-serif;
+    letter-spacing: 0.1rem;;
 }
 
 footer .web-info {
@@ -322,12 +342,12 @@ footer .web-info {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid 2px red;
 }
 
 .web-info .social-media h3 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: rgb(201, 201, 201);
 }
 
 .web-info .social-media figure {
@@ -355,5 +375,35 @@ footer .web-info {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid 2px red;
+}
+
+.web-info .additional-data .text-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.web-info .additional-data h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: rgb(201, 201, 201);
+}
+
+.web-info .additional-data a {
+    text-decoration: none;
+    margin: 0.5rem;
+    color: rgb(120, 120, 120);
+    transition: color 0.5s;
+}
+/*button effect*/
+.web-info .additional-data a:hover, .web-info .additional-data a:focus {
+    color: rgb(255, 255, 255);
+}
+/*copyright setting*/
+.copyright {
+    border-top: solid 0.1rem rgb(167, 167, 167);
+    padding-top: 0.3rem;
+    width: 70%;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
 }
