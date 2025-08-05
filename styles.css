@@ -17,8 +17,8 @@ html {
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,12 +27,13 @@ body {
 /*Nav bar section*/
 /*setting all in nav bar*/
 .left-side-column {
-    width: 5vw;
-    height: 100vh;
+    width: 5rem;
+    height: 100%;
     position: fixed;
+    left: 0;
     top: 0;
+    bottom: 0;
     z-index: 20;
-    border: solid red 2px;
 }
 
 .left-side-column header {
@@ -41,12 +42,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     background: rgb(0,0,0);
 }
 /*set top side*/
 header .top-bar {
     width: 100%;
-    height: 50%;
+    height: 20rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,27 +104,28 @@ header .top-bar {
 
 .bottom-bar .country-selection input {
     width: 90%;
-    max-height: 1rem;
     color: white;
     background-color: black;
     font-size: 0.6rem;
 }
 /*Main Content part Setting*/
 .right-side-column {
-    width: 95vw;
-    height: 100vh;
-    margin-left: 4rem;
+    width: 150rem;
+    height: 150rem;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-content: center;
+    justify-content: flex-start;
+    font-family: "Bangers", sans-serif;
+    border: solid 2px red;
 }
 
 main {
     width: 100%;
-    height: 90vh;
+    height: 90%;
     display: flex;
     flex-direction: column;
-    font-family: "Bangers", sans-serif;
 }
 /*join buttn set*/
 .join-button {
@@ -137,6 +140,7 @@ main {
 
 .join-button a {
     width: 5%;
+    max-width: 70px;
     height: 100%;
     padding: 0.7rem;
     display: flex;
@@ -175,6 +179,7 @@ main {
 
 .web-name-part video {
     width: 100%;
+    max-width: 3840px; /* Limit the maximum width */
     height: 100%;
     object-fit: cover;
     position: absolute;
@@ -319,14 +324,13 @@ main {
 /*footer setting*/
 footer {
     width: 100%;
-    height: 10vh;
+    height: 10%;
     background-color: rgb(54, 54, 54);
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: "Bangers", sans-serif;
     letter-spacing: 0.1rem;;
 }
 
