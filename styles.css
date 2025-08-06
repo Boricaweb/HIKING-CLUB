@@ -177,6 +177,7 @@ main {
 .web-name-part {
     width: 100%;
     min-height: 27vh;
+    max-height: 70rem; /* Limit the maximum height */
     position: relative; 
     top: 0;  
     display: flex;
@@ -220,7 +221,7 @@ main {
 .intro-part {
     width: 100%;
     min-height: 13.5vh;  
-    padding: 10px;
+    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -228,7 +229,7 @@ main {
 }
 
 .intro-part .left-text {
-    margin: 0.5rem 3rem 0.5rem 6rem;
+    margin: 0.5rem 3% 0.5rem 4rem;
 }
 
 .intro-part .left-text p {
@@ -356,7 +357,6 @@ footer .web-info {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 4px red;
 }
 /*Web page social media part*/
 .web-info .social-media {
@@ -429,12 +429,10 @@ footer .web-info {
     border-top: solid 0.1rem rgb(167, 167, 167);
     padding: 1rem;
     width: 70%;
+    max-width: 1300px; /* Limit the maximum width */
     font-size: 0.7rem;
     display: flex;
     justify-content: center;
 }
 
-/*snap scrolling*/
-article {
-    scroll-snap-align: start;;
-}
+/*mobile layout adjust*/
