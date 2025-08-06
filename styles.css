@@ -20,9 +20,6 @@ body {
     min-width: 100vw;
     min-height: 100vh;
     display: block;
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
     overflow-x: hidden;
 }
 
@@ -199,17 +196,15 @@ main {
 .web-name-text {
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    text-align: center;
 }
 
 .web-name-text h1 {  
     width: 100%;
     height: 100%;
-    margin-left: 4rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     font-size: 4rem;
     letter-spacing: 0.4rem;
     color: white;
@@ -268,8 +263,8 @@ main {
 }
 
 .promote-photo img {
-    width: 17rem;
-    height: 17rem;
+    width: 14rem;
+    height: 11rem;
     border-radius: 1rem;
     box-shadow: 0.3rem 0.3rem 0.3rem rgba(255, 255, 255, 0.5);
     object-fit: fill;
@@ -289,21 +284,21 @@ main {
 }
 
 .benefit-photo .photo {
-    width: 24rem;
-    height: 22rem;
+    width: 20rem;
+    height: 18rem;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: scale 0.5s;
+    margin: 1rem;
 }
 
 .benefit-photo .photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    padding: 0.1rem;
     border-radius: 1rem;;
     position: absolute;
     top: 0;
@@ -366,6 +361,7 @@ footer .web-info {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .web-info .social-media h3 {
@@ -436,3 +432,168 @@ footer .web-info {
 }
 
 /*mobile layout adjust*/
+@media screen and (max-width: 430px) {
+    /*Global setting*/
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    /*Nav bar setting*/
+    .left-side-column {
+        min-width: 100%;
+        height: 4rem;
+        position: fixed;  
+        left: 0;
+        top: auto;
+        bottom: 0;
+        z-index: 20;
+    }
+
+    .left-side-column header {
+        min-width: 100%;
+        height: 100%;
+        background: rgb(0,0,0);
+    }
+
+    header .top-bar {
+        min-width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*set nav image button*/
+    .top-bar a {
+        min-width: 20%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*decrease nav bar side*/
+    .bottom-bar {
+        display: none;
+    }
+
+    /*main and footer adjust*/
+    .right-side-column {
+        min-width: 100vw;
+        min-height: 95vh;
+        margin-bottom: 4rem; /* Add space for the fixed nav bar */
+    }
+
+    /*join button*/
+    .join-button a {
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+
+    /*Web name*/
+    .web-name-text h1 {  
+        font-size: 3rem;
+        letter-spacing: 0.4rem;
+    }
+
+    /*intro part*/
+    .intro-part .left-text {
+        margin: 0.5rem 3% 0.5rem 2rem;
+    }
+    .intro-part .left-text p {
+        font-size: 1rem;
+    }
+
+    .intro-part .right-text {
+        margin-left: 0.2rem;
+    }
+
+    .intro-part .right-text h2 {
+        font-size: 2rem;
+        letter-spacing: 0.4rem;
+    }
+
+    /*promote photo*/
+    .promote-photo h3 {
+        font-size: 1rem;
+        letter-spacing: 0.2rem
+    }
+
+    .promote-photo img {
+        margin: 0.5rem;
+        width: 13rem;
+        height: 10rem;
+        border-radius: 1rem;
+        box-shadow: 0.3rem 0.3rem 0.3rem rgba(255, 255, 255, 0.5);
+        object-fit: fill;
+    }
+
+    /*benefit photo*/
+    .benefit-photo .photo {
+        width: 17rem;
+        height: 13rem;
+    }
+
+    .benefit-photo .photo h3 {
+        font-size: 1.2rem;
+    }
+
+    /*invite part*/
+    .invite-part {
+        font-size: 0.8rem;
+    }
+
+    /*footer social media*/
+    .web-info .social-media h3 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        color: rgb(201, 201, 201);
+    }
+
+    .web-info .social-media figure {
+        width: 50%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .web-info .social-media img {
+        width: 0.6rem;
+        height: 0.6rem;
+        margin: 0 0.3rem;
+    }
+
+    /*footer additional data*/
+    .web-info .additional-data {
+        width: 50%;
+        height: 100%;
+        padding: 0.5rem 0 0.5rem 0;
+        margin-top: 2%;
+    }
+
+    .web-info .additional-data h4 {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+        color: rgb(201, 201, 201);
+    }
+
+    .web-info .additional-data a {
+        line-height: 0.4rem;
+        font-size: 0.5rem;
+        text-decoration: none;
+        margin: 0.5rem;
+        color: rgb(120, 120, 120);
+        transition: color 0.5s;
+    }
+
+    /*copyright part*/
+    .copyright {
+        padding: 0.4rem;
+        font-size: 0.4rem;
+    }
+}
