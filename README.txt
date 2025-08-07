@@ -1,4 +1,6 @@
-Photo and Video reference from www.Pexels.com
+I have build this repository for practice in Full-stack Dev course in "www.codecademy.com". I wish my project will be the example or guildline for someone who would like to learn Full-stack Dev.
+
+Photo and Video in this project are import from www.Pexels.com
 
 Video:
 Web_name_video_bg --> Video by Yaroslav Shuraev: https://www.pexels.com/video/a-couple-trekking-a-mountain-trail-to-reach-the-top-4763825/
