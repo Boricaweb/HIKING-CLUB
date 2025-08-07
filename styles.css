@@ -18,7 +18,7 @@ html {
 
 body {
     min-width: 100vw;
-    min-height: 100vh;
+    height: 200rem;
     display: block;
     overflow-x: hidden;
 }
@@ -48,7 +48,7 @@ body {
 /*set top side*/
 header .top-bar {
     width: 100%;
-    height: 40%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -115,7 +115,7 @@ header .top-bar {
 /*Main Content part Setting*/
 .right-side-column {
     min-width: 100vw;
-    min-height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -125,7 +125,7 @@ header .top-bar {
 
 main {
     width: 100%;
-    min-height: 90vh;
+    height: 180rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,11 +134,12 @@ main {
 .join-button {
     width: 100%;
     max-width: 3840px; /* Limit the maximum width */
-    height: 2rem;
+    height: 3rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: rgba(232, 226, 216, 0.619);
+    background-color: rgba(232, 226, 216, 0.443);
+    position: absolute;
     z-index: 10;
 }
 
@@ -164,7 +165,7 @@ main {
 /*content section setting*/
 .content {
     width: 100%;
-    min-height: 90vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -173,8 +174,8 @@ main {
 /*web name background video setting*/
 .web-name-part {
     width: 100%;
-    min-height: 27vh;
-    max-height: 70rem; /* Limit the maximum height */
+    height: 30%;
+    max-height: 40rem; /* Limit the maximum height */
     position: relative; 
     top: 0;  
     display: flex;
@@ -204,8 +205,8 @@ main {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-content: center;
-    font-size: 4rem;
+    align-items: center;
+    font-size: 5rem;
     letter-spacing: 0.4rem;
     color: white;
     -webkit-text-stroke: 0.1rem black;  /*Add a black outline to the text */
@@ -215,7 +216,7 @@ main {
 /*intro part setting*/
 .intro-part {
     width: 100%;
-    min-height: 13.5vh;  
+    height: 15%;  
     padding: 1rem;
     display: flex;
     justify-content: center;
@@ -224,24 +225,23 @@ main {
 }
 
 .intro-part .left-text {
-    margin: 0.5rem 3% 0.5rem 4rem;
+    margin: 0.5rem 3rem 0.5rem 4rem;
 }
 
 .intro-part .left-text p {
-    font-size: 1.2rem;
+    font-size: 2rem;
     letter-spacing: 0.1rem;
     line-height: 1.5;
 }
 
 .intro-part .right-text h2 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     letter-spacing: 0.4rem;
 }
 /*promote part setting*/
 .promote-photo {
     width: 100%;
-    min-height: 18vh;
-    padding: 1rem;
+    height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,21 +250,21 @@ main {
 }
 
 .promote-photo h3 {
-    width: 20%;
-    min-width: 15rem;
-    height: 100%;
-    margin: 1rem;
+    width: 15rem;
+    height: 7rem;
+    margin-left: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     letter-spacing: 0.2rem;
     color: white;
 }
 
 .promote-photo img {
-    width: 14rem;
-    height: 11rem;
+    width: 25rem;
+    height: 20rem;
+    margin-left: 4.5rem;
     border-radius: 1rem;
     box-shadow: 0.3rem 0.3rem 0.3rem rgba(255, 255, 255, 0.5);
     object-fit: fill;
@@ -273,9 +273,9 @@ main {
 /*benefit photo part setting*/
 .benefit-photo {
     margin-top: 1rem;
-    padding: 1%;
+    padding-left: 3rem;
     width: 100%;
-    min-height: 22.5vh;
+    height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -335,7 +335,7 @@ main {
 /*footer setting*/
 footer {
     width: 100%;
-    min-height: 10vh;
+    min-height: 20rem;
     background-color: rgb(54, 54, 54);
     color: white;
     display: flex;
