@@ -115,7 +115,7 @@ header .top-bar {
 /*Main Content part Setting*/
 .right-side-column {
     min-width: 100vw;
-    height: 100%;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -165,17 +165,23 @@ main {
 /*content section setting*/
 .content {
     width: 100%;
-    height: 100%;
+    min-height: 180rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    /*scroll-snap-type: y mandatory;  Enable snap scrolling */
 }
+
+/*next section scroll
+article {
+    scroll-snap-align: center;
+}*/
+
 /*web name background video setting*/
 .web-name-part {
     width: 100%;
-    height: 30%;
-    max-height: 40rem; /* Limit the maximum height */
+    min-height: 54rem;
     position: relative; 
     top: 0;  
     display: flex;
@@ -216,7 +222,7 @@ main {
 /*intro part setting*/
 .intro-part {
     width: 100%;
-    height: 15%;  
+    min-height: 27rem;  
     padding: 1rem;
     display: flex;
     justify-content: center;
@@ -241,7 +247,7 @@ main {
 /*promote part setting*/
 .promote-photo {
     width: 100%;
-    height: 20%;
+    min-height: 36rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -272,10 +278,9 @@ main {
 
 /*benefit photo part setting*/
 .benefit-photo {
-    margin-top: 1rem;
     padding-left: 3rem;
     width: 100%;
-    height: 30%;
+    min-height: 50rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -284,15 +289,15 @@ main {
 }
 
 .benefit-photo .photo {
-    width: 20rem;
-    height: 18rem;
+    width: 21rem;
+    height: 17rem;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: scale 0.5s;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
 .benefit-photo .photo img {
@@ -310,11 +315,10 @@ main {
     z-index: 5; /* Ensure the text is above the image */
     color: rgb(255, 255, 255);
     text-shadow: black 0.1rem 0.1rem 0.2rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     letter-spacing: 0.2rem;
     text-align: center;
     padding: 1rem;
-    /*transition: text-shadow 0.3s;*/
 }
 
 .benefit-photo .photo:hover, .benefit-photo .photo:focus {
@@ -324,18 +328,19 @@ main {
 /*invite part*/
 .invite-part {
     width: 100%;
-    min-height: 9vh;
-    padding: 5%;
+    min-height: 13rem;
+    padding: 1rem 1rem 1rem 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
     letter-spacing: 0.15rem;
+    font-size: 1.5rem;
     background-color: rgb(255, 255, 255);
 }
 /*footer setting*/
 footer {
     width: 100%;
-    min-height: 20rem;
+    height: 20rem;
     background-color: rgb(54, 54, 54);
     color: white;
     display: flex;
@@ -505,7 +510,7 @@ footer .web-info {
         margin: 0.5rem 3% 0.5rem 2rem;
     }
     .intro-part .left-text p {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .intro-part .right-text {
@@ -513,26 +518,33 @@ footer .web-info {
     }
 
     .intro-part .right-text h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         letter-spacing: 0.4rem;
     }
 
     /*promote photo*/
     .promote-photo h3 {
-        font-size: 1rem;
-        letter-spacing: 0.2rem
+        width: 17rem;
+        height: 9rem;
+        margin-left: 0;
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
     }
 
     .promote-photo img {
-        margin: 0.5rem;
-        width: 13rem;
-        height: 10rem;
+        margin: 1rem;
+        width: 19rem;
+        height: 17rem;
         border-radius: 1rem;
         box-shadow: 0.3rem 0.3rem 0.3rem rgba(255, 255, 255, 0.5);
         object-fit: fill;
     }
 
     /*benefit photo*/
+    .benefit-photo {
+        padding-left: 0;
+    }
+
     .benefit-photo .photo {
         width: 17rem;
         height: 13rem;
@@ -544,7 +556,8 @@ footer .web-info {
 
     /*invite part*/
     .invite-part {
-        font-size: 0.8rem;
+        font-size: 1rem;
+        padding-left: 0;
     }
 
     /*footer social media*/
@@ -595,5 +608,30 @@ footer .web-info {
     .copyright {
         padding: 0.4rem;
         font-size: 0.4rem;
+    }
+}
+
+/*media queries for big screen*/
+@media screen and (min-width: 1440px) {
+    /*benefit photo part setting*/
+    .benefit-photo {
+        min-height: 45rem;
+    }
+
+    .benefit-photo .photo {
+        width: 27rem;
+        height: 24rem;
+        margin: 0.5rem;
+    }
+
+    .benefit-photo .photo h3 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    /*invite part*/
+    .invite-part {
+        min-height: 18rem;
+        font-size: 2.6rem;
+        padding-bottom: 3rem;
     }
 }
